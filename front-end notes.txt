@@ -1,0 +1,6 @@
+block level elemnts: div, h1, etc
+inline level elements: image, span, etc 
+GOOGLE SEARCH IT
+
+/* inline dont allow to set width, so inline-block using we are, to set the value of width */
+/* if margin is together up and down, or side by side then it collapses and higher value will be considered */
