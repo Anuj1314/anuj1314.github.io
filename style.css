@@ -167,6 +167,10 @@ text-align: left;
   width: 65%;
   margin: 5% 0 5% 25%;
 }
+.copyright{
+  text-align: center;
+  margin-bottom: 20px;
+}
 body{
     background: #efefef;
     font-family: sans-serif;
