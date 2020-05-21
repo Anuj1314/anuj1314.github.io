@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="style.css">
     <title>Resume-Anuj Patel</title>
   </head>
+  <script type="text/javascript" src="script/index.js">
+
+  </script>
   <body>
     <div class="profile-info">
       <div class="display-profile">
@@ -69,13 +72,13 @@
       </div>
       <div class="form-box">
         <h2>Contact Me</h2>
-        <form>
+        <form onsubmit="return validateform()">
           <div class="input-group">
-            <input type="text" placeholder="First Name" name="" value="">
-            <input type="text" placeholder="Last Name" name="" value="">
+            <input type="text" placeholder="First Name" name="fname" id="fname" value="">
+            <input type="text" placeholder="Last Name" name="lname" id="lname" name="" value="">
           </div>
           <div class="input-group">
-            <input type="number" placeholder="Phone Number" name="" value="">
+            <input type="number" placeholder="Phone Number" id="phNumber" name="phNumber" value="">
             <input type="email" placeholder="Your Email" name="" value="">
           </div>
           <div class="text-area">
