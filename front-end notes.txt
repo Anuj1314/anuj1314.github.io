@@ -1,5 +1,5 @@
 block level elemnts: div, h1, etc
-inline level elements: image, span, etc 
+inline level elements: image, span, etc
 GOOGLE SEARCH IT
 
 /* inline dont allow to set width, so inline-block using we are, to set the value of width */
@@ -12,3 +12,12 @@ Examples of non-semantic elements: <div> and <span> - Tells nothing about its co
 
 Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
 
+@media  only screen and (max-width:990px){
+  .profile-info{
+    width: 100%;
+    overflow: inherit;
+  }
+  }
+  so this attributes will be overwritten and other attributes will be takes as previous
+
+span tag is like inline container
