@@ -1,7 +1,15 @@
-.container{
-  background: #efefef;
+
+.header{
+  background-color: #67e6e6;
 }
-.footer{
-  text-align: center;
-  margin-top: 80vh;
+body{
+  margin: 0;
+  background-color: #efefef;
+}
+.image-container img{
+  width:25%;
+  padding: 3%;
+  margin-left: 2%;
+
+
 }

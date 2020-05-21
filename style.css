@@ -172,10 +172,11 @@ body{
   .profile-info{
     width: 100%;
     overflow: inherit;
+    height: 60vh;
   }
   .work-info{
     width: 100%;
-
+    height: 40vh;
   }
   .work-info-basic{
     width: 100%;
