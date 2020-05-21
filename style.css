@@ -100,12 +100,30 @@
   padding-top: 10px;
   display: block;
 }
-.projects img{
-  width: 31%;
+
+
+
+.projects .project img{
+  width: 90%;
   padding: 4px;
-  margin-bottom: 5px;
-  margin-left: 5px;
+    /* margin-bottom: 5px;
+    margin-left: 5px; */
 }
+.project{
+  text-align: center;
+  display: inline-block;
+  width: 49%;
+}
+
+/* .project h3{
+text-align: left;
+} */
+
+
+
+
+
+
 .form-box{
   margin-top: 30px;
 }

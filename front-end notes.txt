@@ -4,3 +4,11 @@ GOOGLE SEARCH IT
 
 /* inline dont allow to set width, so inline-block using we are, to set the value of width */
 /* if margin is together up and down, or side by side then it collapses and higher value will be considered */
+
+
+A semantic element clearly describes its meaning to both the browser and the developer.
+
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+
+Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
