@@ -1,15 +1,59 @@
 
 .header{
   background-color: #67e6e6;
+  height: 50px;
+
 }
 body{
   margin: 0;
   background-color: #efefef;
 }
-.image-container img{
-  width:25%;
-  padding: 3%;
-  margin-left: 2%;
 
+.figure-container{
+  float: right;
+  width: 25%;
+}
+.figure-container h3{
+  text-align: center;
+}
+.all-figures{
+  display: block;
+  height: 350px;
+  overflow: scroll;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+}
+.all-figures::-webkit-scrollbar{
+  width: 0px;
+}
+.fig{
+  margin: 10px;
+  display: inline-block;
+}
+.fig img{
+  width: 100%;
+}
+.devices-footer{
+  text-align: center;
+}
+.project-information{
+  float: left;
+  width: 75%;
+}
+.project-information h2{
+  margin-left: 15px;
+  padding: 0 5px 10px 5px;
+}
+.project-information p{
+  padding: 0 5px 10px 5px;
+  margin-left: 25px;
+}
 
+@media  only screen and (max-width:990px){
+  .figure-container{
+    width:100%;
+  }
+  ..project-information{
+    width: 100%;
+  }
 }
