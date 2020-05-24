@@ -12,7 +12,7 @@ body {
 .block {
   box-shadow: 0 0 2px 0px rgba(37, 73, 214, 0.3);
   display: flex;
-  margin: 0 260px 0;
+  margin: 0 100px 0;
 }
 
 .block__left-column {
@@ -141,12 +141,17 @@ h4 {
 
 .p_data {
   display: block;
+  /* margin-left: 35px; */
+  padding-left: 30px;
+  margin-bottom: 15px;
+  ;
 }
 
 .p_data img {
   display: block;
-  width: 10%;
-  margin-left: 5px;
+  width: 7%;
+  margin-bottom: 5px;
+  /* margin-left: 5px; */
 }
 
 .p_data span {
