@@ -1,0 +1,70 @@
+margin left auto and margin right auto will put that particular element in center(only horizotal), but same for vertical will not work.
+only putting one property, like, margin-left:auto; it means put margin as much as possible from left side only
+padding is creating space inside whereas margin is creating space outside. or margin is like pushing things away
+padding doesnt merge, marging can merge.
+same level elements margin collapse, so if elements are nested, then it wont collapse.
+eg. <div margin top 100>
+      <div margin top 300>
+      </div>
+    </div>
+then total margin you would see will be 400
+
+generally, the default margin on text is about the size of your text
+tags may have some default margin values, like h1 tag has some default margin value, just inspect that. Solution would  be, put margin 0 in h1 css;
+display flex and dispaly grid, then margin collapse wont happen.
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+this we do to select every elemnt and we off margin and padding. This selescts all elements except pseudo elements.
+
+h1{
+margin bottom: 0.5em;
+}
+ meaning, margin will be half size of font size of h1, there is another  unit which is rem, I think it takes value of parent class or tag, not sure about it
+ total size of something is size of that thing+ margin + padding
+
+1 box-sizing: content-box; it is default; if width and height is 200 and padding top left is 100, then total box size will become height + padding; definitely more than 200;
+2 box sizing: border-box; means it will calculate padding as part of total size; so height width is 200 and add padding 100; still whole box size will be 200; and padding will be added to that box only.
+1:if height width of div is 100, and padding is 100 means that div of 100 h and w will be in padding of 100 from all sides.
+2. if height width of div is 100, and padding is 50: Then padding of 50 will be inside of that 100*100 box.
+2.not creating extra empty space, just pushing things inside
+
+
+Use BEM style of naming in CSS classes
+http://getbem.com/naming/
+Block class, Element class and Modifier class.
+
+try to put margin and padding values in ems and rems.
+Anytime, something has a background-color, you should give a padding and not margin
+
+Floats, Flexbox, Grid?
+XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+These are some props we can user with flex.
+one thing with flex items is that they adjust automatically to how big or how small they should be based on the content that's inside of them.
+flax-wrap default is nowrap, which affects internal items  width if we have given some width to items. We should change it to wrap, so that will not affect width of internal items. somewhat related to overflow. Like if we have 4 items in a container having width of 30%, and if we have default nowrap property then items will look like they are out of container, but if we set to wrap property, then it will adjust and  will go down to next row if possible.
+flex flow is combining flex-direction and flex-wrap.
+justify-content, align-items and align-content.
+justify-content: flex-start, flex-end, center, space-between(equal amount of space between them), space-around(equal amount of space between them including same amount of space before start and after end, which was not there in space-between).
+what is difference between flex-direction: row-reverse and justify-content:flex-end? You know the answers
+alignitems default is stretch, can change it to flex start end center, etc
+Main access here is lets assume row(flex-direction), then justify content will work on x axis or row direction whereas alignitems: end will put those items to end in y axis.
+Justify-content always work on the main access whereas align-items working on the cross-access.
+align-items don't have space-between or space-around property, and and it has baseline prop which others don't have.
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX these all properties written together in main container
+
+YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+Everything inside of flex is flex item.
+and flex item can have five properties in it.
+flex-grow, flex-shrink, flex-basis, order, align-self.
+flex, is also a property of each item, flex is basically combination of flex-grow-shrink-basis
+Remember these all are properties you are putting in each items, and flex is a main container, which has all these items.
+align self is same as align items, just it is for particular item and align item is for whole container
+flex-basis is like, it has available space, how much room should it take.(ex 250px)
+flex-grow, flex-shrink is like how much rate it should grow or shrink, default is 0.
+assume there are two items, if one has flex-shrink 1 and two has flex-shrink 2, then when those both items are shrinking, two will shrink at double speed of shrinking speed of one.
+
+order is like sankhya-srekha. -3 -2 -1 0 1 2 3.
+default order of particular item is 0, now if I make order of any item -1, then it that item will go behind 1 of its place, or if i make it 2 then it will to 2 places ahead of its default place.
