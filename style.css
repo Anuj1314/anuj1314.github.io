@@ -202,6 +202,11 @@ body {
     margin: 5px;
   }
 
+  .block {
+    display: flex;
+    flex-direction: column;
+  }
+
   .block__profile-info {
     width: 100%;
     overflow: inherit;
