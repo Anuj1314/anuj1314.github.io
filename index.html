@@ -1,107 +1,286 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- This tag will help us to make the page responsive -->
-  <link rel="stylesheet" href="style.css">
-  <title>Resume-Anuj Patel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anuj Patel - Site Reliability Engineer specializing in building resilient infrastructure and automating operations for high-traffic applications">
+    <meta name="keywords" content="Site Reliability Engineer, SRE, DevOps, Kubernetes, AWS, Infrastructure">
+    <meta name="author" content="Anuj Patel">
+    <title>Anuj Patel - Site Reliability Engineer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<script type="text/javascript" src="script/index.js">
-
-</script>
-
 <body>
-  <div class="block">
-    <div class="block__profile-info">
-      <div class="display-profile">
-        <img src="images/displayProfile.jpg" alt="Photo couldn't loaded">
-        <h2>Anuj Patel</h2>
-        <div class="basic-info">
-          <ul>
-            <li>Graduated from Parul University</li>
-            <li>Intern at Darby Telematics India</li>
-
-          </ul>
-          <p>I like doing computer programming, and sometimes I do UI designing</p>
-          <p style="text-align:center;"> <a href="Resume2.0/index.html">Resume 2.0</a> </p>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h3>Anuj Patel</h3>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#recommendations" class="nav-link">Recommendations</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
-      </div>
+    </nav>
+
+    <!-- Header/Hero Section -->
+    <header class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Anuj Patel</h1>
+                    <h2 class="hero-subtitle">SRE | Building Resilient Infrastructure & Automating Operations for High-Traffic Applications</h2>
+                    <p class="hero-location">📍 Bengaluru, Karnataka, India</p>
+                    <div class="hero-actions">
+                        <button class="btn btn--primary" id="download-cv">Download CV</button>
+                        <a href="#contact" class="btn btn--outline">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-photo">
+                        <div class="profile-placeholder">AP</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>Experienced Site Reliability Engineer with over 5 years of expertise in building and maintaining highly resilient infrastructure for high-traffic applications. Currently serving as Principal Site Reliability Engineer at Darby Telematics, I specialize in architecting enterprise-grade alerting systems, implementing comprehensive monitoring infrastructure, and optimizing cloud operations for cost efficiency.</p>
+                <p>My expertise spans across modern DevOps tools and practices including Kubernetes, AWS, Infrastructure as Code, and comprehensive CI/CD pipeline implementation. I have a proven track record of achieving significant cost reductions while improving system reliability and operational efficiency through automation and strategic optimization.</p>
+                <p>I'm passionate about leveraging cutting-edge technologies to solve complex infrastructure challenges and drive operational excellence in enterprise environments.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section--alt" id="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content card">
+                        <div class="card__body">
+                            <div class="experience-header">
+                                <h3>Principal Site Reliability Engineer</h3>
+                                <span class="experience-company">Darby Telematics</span>
+                                <div class="experience-meta">
+                                    <span class="experience-duration">Apr 2025 - Present · 5 months</span>
+                                    <span class="experience-location">Bengaluru, Karnataka, India</span>
+                                </div>
+                            </div>
+                            <ul class="experience-achievements">
+                                <li>Architected and deployed enterprise alerting system that monitors critical alerts and delivers notifications to relevant teams through multiple channels (chat, email, voice)</li>
+                                <li>Built comprehensive monitoring infrastructure using Prometheus, CloudWatch, PagerDuty, and AWS SNS for full observability stack coverage</li>
+                                <li>Automated system configuration using Ansible and implemented Infrastructure as Code (IaC) for rapid environment provisioning and disaster recovery across multiple environments</li>
+                                <li>Optimized Kubernetes cluster resource utilization through detailed performance analysis, enabling resource right-sizing that reduced operational costs</li>
+                                <li>Managed AWS account operations and implemented cost optimization strategies, achieving 40% reduction in overall cloud billing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content card">
+                        <div class="card__body">
+                            <div class="experience-header">
+                                <h3>Site Reliability Engineer</h3>
+                                <span class="experience-company">Darby Telematics</span>
+                                <div class="experience-meta">
+                                    <span class="experience-duration">Full-time · 5 yrs 7 mos</span>
+                                    <span class="experience-location">Bengaluru, Karnataka, India</span>
+                                </div>
+                            </div>
+                            <ul class="experience-achievements">
+                                <li>Implemented comprehensive CI/CD pipelines using Jenkins, Rundeck, and GitLab runners with GitLab for version control management</li>
+                                <li>Deployed centralized logging infrastructure using EFK Stack (Elasticsearch, Fluent-bit, Kibana) to capture logs from both stateful servers and Kubernetes clusters</li>
+                                <li>Setup production-grade stateful servers including RabbitMQ, MariaDB, MongoDB, Kafka, Nginx, PostgreSQL, PritunlVPN, EMQX, FTP, and RedisCache</li>
+                                <li>Developed bash scripts for automation of server deployments, alerts, resource utilization reporting, and other operational tasks</li>
+                                <li>Automated build and deployment processes while providing critical system insights, resulting in significantly improved development velocity and operational efficiency</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item card">
+                <div class="card__body">
+                    <h3>Bachelor of Technology - BTech</h3>
+                    <p class="education-field">Computer Science and Engineering</p>
+                    <p class="education-institution">PARUL INSTITUTE OF ENGG. AND TECH., LIMDA, VAGHODIA</p>
+                    <div class="education-meta">
+                        <span class="education-years">2015 - 2019</span>
+                        <span class="education-grade status status--success">Distinction with First class</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section--alt" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Cloud & Infrastructure</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Infrastructure as Code (IaC)</span>
+                        <span class="skill-tag">Ansible</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Monitoring & Observability</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Prometheus</span>
+                        <span class="skill-tag">CloudWatch</span>
+                        <span class="skill-tag">PagerDuty</span>
+                        <span class="skill-tag">Elasticsearch</span>
+                        <span class="skill-tag">Kibana</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>CI/CD & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">GitLab</span>
+                        <span class="skill-tag">DevOps</span>
+                        <span class="skill-tag">Site Reliability Engineering</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases & Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ClickHouse DB</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">RabbitMQ</span>
+                        <span class="skill-tag">Kafka</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming & Scripting</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Bash Scripting</span>
+                        <span class="skill-tag">Linux/Unix</span>
+                        <span class="skill-tag">Nginx</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section class="section" id="recommendations">
+        <div class="container">
+            <h2 class="section-title">Recommendations</h2>
+            <div class="recommendation-item card">
+                <div class="card__body">
+                    <div class="recommendation-header">
+                        <div class="recommendation-author">
+                            <h4>Amandeep Singh Jagde</h4>
+                            <p class="recommendation-title">Java & Spring Boot Specialist | Architecting Scalable Solutions</p>
+                            <p class="recommendation-date">July 31, 2021</p>
+                        </div>
+                    </div>
+                    <blockquote class="recommendation-text">
+                        "Amandeep Singh is an amazing person to work with, a great team player having the skills to lead the team. His positive attitude and appetite for learning is what sets him apart. He is the most profound person I have met. A combination of humor and empathy helps lift the spirit in stressful situations, and his ability to tackle any problem is remarkable and with a warm smile. He is one of the most dedicated professionals I've worked with and is willing to put that extra help whenever you need it."
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section--alt" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <strong>Email:</strong> contact@anujpatel.dev
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone:</strong> +91 XXXXX XXXXX
+                    </div>
+                    <div class="contact-item">
+                        <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/anuj-patel-423711104" target="_blank" rel="noopener">linkedin.com/in/anuj-patel-423711104</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Location:</strong> Bengaluru, Karnataka, India
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name *</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email *</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject *</label>
+                        <input type="text" id="subject" name="subject" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message *</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Anuj Patel. All rights reserved.</p>
+                <p>Built with passion for clean code and reliable infrastructure.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-spinner"></div>
     </div>
-    <div class="block__work-info">
-      <div class="work-info-basic">
-        <h1>Anuj Patel</h1>
-        <p class="about">Analytical bent of mind, Good communiocation-skills, Always ready to learn new technologies; Computer Engineer, based in Bengaluru.</p>
-        <div class="social-media">
-          <a href="https://medium.com/@anujpatel1314"><img src="images/medium1.png" alt="medium icon"></a>
-          <a href="https://twitter.com/ANUJ_1314"> <img src="images/twitter.png" alt="twitter icon"></a>
-          <a href="https://www.linkedin.com/in/anuj-patel-423711104/"> <img src="images/linkedin.png" alt="linkedin icon"></a>
-        </div>
 
-      </div>
-
-      <h2>Skills</h2>
-      <div class="skills">
-        <div class="skill">
-          <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" style="text-decoration:none">
-            <img src="images/java.png" alt="">
-            <p><b>Java Technologies</b></p>
-          </a>
-          <small>Micor-services, Springboot, Netty, Webflux, REST API, Hibernate, Apache Kafka</small>
-        </div>
-        <div class="skill">
-          <img src="images/db.png" alt="">
-          <p><b>Databases</b></p>
-          <small>Relatoinal DB: MySQL, Oracle, H2; NOSQL DB: Mongo</small>
-        </div>
-        <div class="skill">
-          <img src="images/hb.png" alt="">
-          <p><b>Hobbies</b></p>
-          <small>Biking, Photography, Video Games, Reading.</small>
-        </div>
-      </div>
-      <h2>My Projects</h2>
-      <div class="projects">
-        <div class="project">
-          <h3>Home Automation </h3>
-          <a href="pages/homeautomation.html">
-            <img src="images/homeautomation.jpg" alt="">
-          </a>
-        </div>
-        <div class="project">
-          <h3>Automatic Subtitle Generation</h3>
-          <a href="pages/automaticsubtitlegeneration.html">
-            <img src="images/p2.jpg" alt="">
-          </a>
-        </div>
-      </div>
-      <div class="form-box">
-        <h2>Contact Me</h2>
-        <form onsubmit="return validateform()">
-          <div class="input-group">
-            <input type="text" placeholder="First Name" name="fname" id="fname" value="">
-            <input type="text" placeholder="Last Name" name="lname" id="lname" name="" value="">
-          </div>
-          <div class="input-group">
-            <input type="number" placeholder="Phone Number" id="phNumber" name="phNumber" value="">
-            <input type="email" placeholder="Your Email" name="" value="">
-          </div>
-          <div class="text-area">
-            <textarea rows="4" placeholder="Your Message"></textarea>
-          </div>
-          <button type="submit" class="submit-btn" name="button">SEND MESSAGE</button>
-        </form>
-      </div>
-      <div class="contact">
-        <span> <img src="images/phone.png" alt="couldn't load it">+91 1234567890</span>
-        <span> <img src="images/email.png" alt="couldn't load it">anuj@website.com</span>
-      </div>
-      <p class="copyright">&copy; Designed By Anuj Patel</p>
-    </div>
-
-  </div>
-
+    <script src="app.js"></script>
 </body>
-
 </html>
